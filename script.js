@@ -4,10 +4,8 @@ fetch('./data.json')
         const days = ["mon","tue","wed","thu","fri","sat","sun"];
         let cost = [];
         let biggest = 0;
-        for(i = 0; i < data.length; i++) {
+        for(let i = 0; i < data.length; i++) {
             cost.push(Math.round(data[i].amount));
-        }
-        for(i = 0; i < cost.length; i++) {
             let element = document.getElementById(days[i]);
             element.style.height = `${cost[i]*2.5}px`;
             if(cost[i] > biggest) {
@@ -15,7 +13,7 @@ fetch('./data.json')
             }
         }
         let blueId;
-        for(i = 0; i < cost.length; i++) {
+        for(let i = 0; i < cost.length; i++) {
             if(cost[i] == biggest) {
                 blueId = i;
             }
