@@ -17,7 +17,7 @@ body {
     align-items: center;
 }
 .comment {
-    font-size: 80%;
+    font-size: 85%;
     font-weight: 300;
     margin: 0;
     color: hsl(28, 10%, 53%);
@@ -29,7 +29,7 @@ body {
 .balance-container {
     width: 100%;
     max-width: 450px;
-    min-width: 345px;
+    min-width: 300px;
     height: 120px;
     box-sizing: border-box;
     padding: 30px;
@@ -52,7 +52,7 @@ body {
 .spending-container {
     width: 100%;
     max-width: 450px;
-    min-width: 345px;
+    min-width: 300px;
     height: 450px;
     box-sizing: border-box;
     margin-top: 20px;
@@ -77,14 +77,17 @@ body {
     align-items: end;
 }
 .day-container {
-    margin: 5px;
     text-align: center;
 }
 .bar {
-    width: 45px;
+    width: 40px;
     height: 25px;
+    margin-bottom: 5px;
     border-radius: 5px;
     background-color: hsl(10, 79%, 65%);
+}
+.day {
+    font-size: 70%;
 }
 /* after line */
 .line {
@@ -113,4 +116,57 @@ body {
     font-size: 90%;
     font-weight: 700;
     margin: 0;
+}
+/* responsiveness */
+@media (max-width: 499px) {
+    .spending-header {
+        font-size: 130%;
+    }
+    .bar {
+        width: 35px;
+    }
+    .spending-cash {
+        font-size: 230%;
+    }
+}
+@media (max-width: 375px) {
+    /* .balance-container */
+    .balance-container {
+        height: 100px;
+        padding: 20px;
+    }
+    .balance-cash {
+        font-weight: 700;
+        font-size: 135%;
+        margin: 5px 0;
+    }
+    .balance-logo {
+        margin-right: 5px;
+        width: 62px;
+    }
+    /* .spending-container */
+    .spending-container {
+        height: 380px;
+        padding: 20px;
+    }
+    .spending-chart {
+        height: 60%;
+    }
+    .bar {
+        width: 30px;
+        margin-bottom: 10px;
+        border-radius: 3px;
+    }
+    .day {
+        font-size: 60%;
+    }
+    .line {
+        margin: 20px 0;
+    }
+    .spending-cash {
+        font-size: 170%;
+    }
+    .percentage-info {
+        padding-bottom: 5px;
+    }
 }
