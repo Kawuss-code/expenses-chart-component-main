@@ -12,3 +12,8 @@ I created it using only HTML, CSS and JS with prepared JSON file. Project is sup
 Because of using fetch I used LiveServer extension on VSC.
 If you have any tips let me know I would love having feedback.
 **Things that I would appreciate the most would be any advice on responsiveness**
+
+## Screenshots
+"./screenshots/desktop"
+"./screenshots/desktop-small"
+"./screenshots/mobile"
